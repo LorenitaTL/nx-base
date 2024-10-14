@@ -22,6 +22,9 @@ jobs:
 
       - name: Check nx version
         run: npx nx --version
+
+      - name: Build application
+        run: npx nx run ${{matrix.app}}:build
 # name: CI
 # on:
 #   push:
